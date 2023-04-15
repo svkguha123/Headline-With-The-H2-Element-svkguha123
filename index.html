@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Add Employee form using HTML CSS and JS">
+    <title>Souvik Guha Frontend 3 Contest 1 15-04-2023</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>New Employees</h1>
+        <form action="./index.html" method="post">
+            <span>
+                <label for="name">Enter Name</label><br>
+                <input type="text" id="name" value="" required>
+            </span>
+            <span>
+                <label for="profession">Enter Profession</label><br>
+                <input type="text" id="profession" value="" required>
+            </span>
+            <span>
+                <label for="age">Enter Age</label><br>
+                <input type="number" id="age" value="" required>
+            </span>
+
+            <input type="button" value="Add User" id="submit" onclick="addEmployee()">
+            <p id="error" style="color: red;"></p>
+            <p id="success" style="color: green;"></p>
+        </form>
+        <h3>Added Employee</h3>
+        <p id="dummy">You have 0 employees</p>
+        <form class="emp-table">
+            <table id="employeeTable" class="table">
+                <tbody id="employeeList">
+                    
+                </tbody>
+
+                
+                
+            </table>
+            
+        </form>
+
+        <script src="./script.js"></script>
+</body>
+
+</html>
